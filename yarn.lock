@@ -29,12 +29,12 @@
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-6.2.0.tgz#ba3510825b332816fe7190f28827f8cb33a298b5"
   integrity sha512-CNR7qRIfCwWHNN7FnKUniva94edPdyQzil/zCwk3v6k4R6rR2Fr8i4s3PM7n/lyfPA6Zfko9z5WDzFxG9SW1uQ==
 
-"@giscus/svelte@^2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@giscus/svelte/-/svelte-2.2.2.tgz#bb8f5710465a67baa3c696591c0ed7054689465d"
-  integrity sha512-erCOLA3XeG1oONEZXUJoMWKtaZV2gJrxYuI8qb796BMGMttpYVtOW8CYV86/Ul9a7ml2CL+4NbBDnHOainI+Gw==
+"@giscus/svelte@^2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@giscus/svelte/-/svelte-2.2.3.tgz#12f8a6bbc210cf19bb8bb5075cd250cea346e751"
+  integrity sha512-lBCq9h3notmwtqGSGS5aXaHIh6DaZa2JzIswao5llEv0Do3bwixZwFPcGdRfLcEkW/6EXsCnycqe9JMwqv6DKg==
   dependencies:
-    giscus "^1.2.2"
+    giscus "^1.2.3"
 
 "@humanwhocodes/config-array@^0.11.6":
   version "0.11.6"
@@ -1114,10 +1114,10 @@ get-caller-file@^2.0.5:
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
   integrity sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
 
-giscus@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/giscus/-/giscus-1.2.2.tgz#b186ede8bba56869f2a1b902031c54d528662677"
-  integrity sha512-H71M3V5K/mmWr5/OwCMCH+s7Z2wVT6uQ1AXe5B0f0jjAGvJ9unAklfp4cNJU5zamjDdMZFVFi/9xhhbHIG3ZTQ==
+giscus@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/giscus/-/giscus-1.2.3.tgz#33e5015b1ea5a9c7647ebddc3722ce033f1f781e"
+  integrity sha512-1sYu6B3cUzPVZHH93f1DX5PJHf5ak2bPp8N1xZrAPxqccN7C/R6r93usllmCVESJ8cvnyYUaNVyXzOYz9B6OxQ==
   dependencies:
     lit "^2.4.1"
 

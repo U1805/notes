@@ -3,7 +3,6 @@
 
 ![Auth](https://img.shields.io/badge/Auth-u1805-green)
 ![Status](https://img.shields.io/badge/status-active-success.svg)
-![GitHub Pull Requests](https://img.shields.io/github/stars/u1805/notes)
 ![GitHub license](https://img.shields.io/github/license/u1805/notes)
 
 </div>

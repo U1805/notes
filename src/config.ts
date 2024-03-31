@@ -7,13 +7,13 @@ import type {
 import { LinkPreset } from './types/config'
 
 export const siteConfig: SiteConfig = {
-  title: 'Fuwari',
-  subtitle: 'Demo Site',
+  title: 'Dai0v0',
+  subtitle: '没有目的地，向前走',
   lang: 'en',
-  themeHue: 250,
+  themeHue: 260,
   banner: {
-    enable: false,
-    src: 'assets/images/demo-banner.png',
+    enable: true,
+    src: 'assets/images/banner.jpg'
   },
 }
 
@@ -24,31 +24,26 @@ export const navBarConfig: NavBarConfig = {
     LinkPreset.About,
     {
       name: 'GitHub',
-      url: 'https://github.com/saicaca/fuwari',
-      external: true,
+      url: 'https://github.com/u1805',
+      external: false,
     },
   ],
 }
 
 export const profileConfig: ProfileConfig = {
-  avatar: 'assets/images/demo-avatar.png',
-  name: 'Lorem Ipsum',
-  bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  avatar: 'assets/images/avatar.jpg',
+  name: 'Dai0v0',
+  bio: '一瞬一瞬で一生',
   links: [
     {
-      name: 'Twitter',
-      icon: 'fa6-brands:twitter',
-      url: 'https://twitter.com',
-    },
-    {
-      name: 'Steam',
-      icon: 'fa6-brands:steam',
-      url: 'https://store.steampowered.com',
+      name: 'Mail',
+      icon: 'material-symbols:mail',
+      url: 'mailto:dai@outlook.in',
     },
     {
       name: 'GitHub',
       icon: 'fa6-brands:github',
-      url: 'https://github.com/saicaca/fuwari',
+      url: 'https://github.com/u1805',
     },
   ],
 }

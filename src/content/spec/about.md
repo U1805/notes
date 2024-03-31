@@ -1,7 +1,33 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+```c
+printf("Hello, World!\n");
+```
+```cpp
+std::cout << "Hello, World!" << std::endl;
+```
+```java
+System.out.println("Hello, World!");
+```
+```javascript
+console.log("Hello, World!");
+```
+```python
+print("Hello, World!")
+```
+```go
+fmt.Println("Hello, World!")
+```
+
+## 自谓无趣，寻趣事以充实日常
+
+- 板绘, Photoshop
+- AE
+- Live2D
+- RSS
+- Stable Diffusion
+- 双拼, RIME
+- 日语
+- <del>提督指挥官御主博士骑空士骑士君训练师制作人sensei</del>
+
+![baki](./BAKI.jpg)

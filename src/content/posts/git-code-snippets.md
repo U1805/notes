@@ -4,7 +4,7 @@ published: 2023-07-12 13:05:56
 draft: false
 tags: [Git]
 category: Cli-tools
-image: "./cover.jpg"
+image: "./covers/branch.jpg"
 ---
 
 GIT 是目前世界上最先进的分布式版本控制系统

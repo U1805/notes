@@ -4,21 +4,24 @@ published: 2024-03-06 23:40:00
 draft: false
 tags: [Python, Crawler]
 category: Crawler
-image: "./cover.jpg"
+image: "./covers/13.jpg"
 ---
 
 # python 爬虫
 
 ## 用户设置
 
-设置 HEADER
+### 🐭设置 HEADER
 
 ```python
-header = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64).."} 
+import requests
+header = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+    } 
 res = requests.get('https://www.douban.com/', headers=header) 
 ```
 
-设置代理 PROXY
+### 🚀设置代理 PROXY
 
 ```python
 proxies = {
@@ -30,30 +33,37 @@ res = requests.get('https://www.douban.com/', proxies=proxies)
 
 ## HTTP 请求
 
-GET 请求页面
+### ➡️GET 请求页面
 
 ```python
-import requests
 res = requests.get('https://www.jd.com/')
-print(res.text)
 ```
 
-GET 请求二进制数据(eg.图片)
-
-```python
-import requests
-res = requests.get('https://img1.doubanio.com/view/photo/raw/public/p2654818960.jpg')
-with open('./cover.jpg', 'wb') as f:
-    f.write(res.content)
-```
-
-POST 请求
+### ⬅️POST 请求
 
 ```python
 res = requests.post('http://www.xxxx.com', data={"key": "value"}) 
 ```
 
-## 解析 HTML
+## 解析响应
+
+### 🏞️二进制数据(eg.图片)
+
+```python
+res = requests.get(url)
+with open('./cover.jpg', 'wb') as f:
+    f.write(res.content)
+```
+
+### 📊json 数据
+
+```python
+import json
+res = requests.get(url)
+print(json.loads(res.text))
+```
+
+### 📑HTML 页面
 
 ```python
 from bs4 import BeautifulSoup
@@ -78,7 +88,7 @@ print(element.get_text())
 
 ## 一些爬虫技术
 
-随机睡眠
+### 😴随机睡眠
 
 ```python
 import time
@@ -87,7 +97,7 @@ import random
 time.sleep(random.uniform(0,5))
 ```
 
-超时重试
+### 🔁超时重试
 
 ```python
 from requests.adapters import HTTPAdapter
@@ -98,7 +108,7 @@ s.mount('https://', HTTPAdapter(max_retries=3))
 res = s.get('http://www.xxxx.com', timeout=(10, 27))  # (connect超时, read超时)
 ```
 
-多线程运行
+### ⚟多线程运行
 
 ```python
 import threading
@@ -124,7 +134,7 @@ for t in thread_list:
 
 ## 其他功能实现
 
-新建文件夹
+### 新建文件夹
 
 ```python
 import os
@@ -133,7 +143,7 @@ if not os.path.isdir(dir_path):
     os.mkdir(dir_path)
 ```
 
-日志输出
+### 日志输出
 
 引入 `logging` 后 `logging.info()` 即可，但是在 Jupyter notebook 中需要先设置一下：
 

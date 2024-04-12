@@ -1,10 +1,11 @@
 ---
 title: Server Clash
 published: 2024-02-17 18:46:18
+description: '研究 QQ 机器人搭建的时候，推文推送的功能需要访问外网。正好前些日子看到 Warp-Clash-Api，试试这个项目和 Clash 的部署'
 draft: false
 tags: [server clash, proxy]
 category: Examples
-image: "./aru.jpg"
+image: "./covers/881A4685A08A9575B7F5A4FA14AC865F.jpg"
 ---
 
 在研究 QQ 机器人搭建的时候，一个推文推送的功能需要访问外网。正好前些日子看到 [Warp-Clash-Api](https://github.com/vvbbnn00/WARP-Clash-API) 的仓库，顺便试试

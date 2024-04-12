@@ -28,6 +28,8 @@ fmt.Println("Hello, World!")
 - Stable Diffusion
 - 双拼, RIME
 - 日语
+- Logseq
+- VS Code
 - <del>提督指挥官御主博士骑空士骑士君训练师制作人sensei</del>
 
-![baki](./BAKI.jpg)
+![](./kyk.gif)

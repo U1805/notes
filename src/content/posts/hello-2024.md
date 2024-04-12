@@ -4,7 +4,7 @@ published: 2024-01-01 21:46:18
 draft: false
 tags: [Flag, NewYear]
 category: Life
-image: "./kajetan-sumila-mis7syjThUU-unsplash.jpg"
+image: "./covers/kajetan-sumila-mis7syjThUU-unsplash.jpg"
 ---
 
 今天是 2024/1/1，距離上一次打開這個 Blog 快半年了(ノдT)

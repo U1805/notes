@@ -4,7 +4,7 @@ published: 1970-01-01
 description: A simple example of a Markdown blog post.
 tags: [Markdown, Blogging, Demo]
 category: Examples
-image: "./cover.jpeg"
+image: "./covers/cover.jpeg"
 draft: false
 ---
 

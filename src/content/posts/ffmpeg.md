@@ -4,6 +4,7 @@ published: 2024-03-06 23:42:00
 draft: false
 tags: [FFmpeg, Video]
 category: Cli-tools
+image: "./covers/FijuOKZaMAE451l.png"
 ---
 
 # ffmpeg

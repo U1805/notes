@@ -1,12 +1,15 @@
 ---
-title: 代理劫持方式控制
+title: 中间层实现语音浏览器控制
 published: 2024-04-12
 description: '用户使用语音控制页面发出请求，但是语音识别接口在本地而不在服务器后端'
 image: '../covers/4ad5318653e8e55a0bce5c2615265977314179725.jpg'
-tags: [Proxy hacking]
+tags: [Injecting]
 category: 'Full Stack'
 draft: false 
 ---
+
+> All problems in computer science can be solved by another level of indirection  
+> 计算机科学领域的任何问题都可以通过增加一个中间层来解决。 —— Butler Lampson
 
 ## 需求
 
@@ -34,6 +37,8 @@ draft: false
 
 在第二天早上睡醒的时候，重新想了一下这个问题，突然想到一个新方案（**睡觉真的有用** (∂ω∂)
 
+如果系统的控制权、代码完全被掌控，很容易添加中间层；
+
 前端可以一直发送请求，本地用类似代理的方式，拦截前端的请求，发送到服务器得到响应返回给前端。  
 因为中间的请求响应完全经过代理，代理可以实现更多具体逻辑，比如**等待语音唤醒出现后才放行请求**！  
 从服务器拿到响应后也直接可以自己处理，而不是页面转交。
@@ -58,7 +63,7 @@ draft: false
 
 写一下关键部分的 demo
 
-### 代理 Proxy
+### 中间层代理 Proxy
 
 因为离线语音识别使用 Python 封装输出接口，代理的实现也选择了 Python，理论上功能不复杂，就选择用 Flask 直接实现了。
 

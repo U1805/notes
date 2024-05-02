@@ -123,9 +123,9 @@ const className = Astro.props.class;
       p
         color: #aeaeae;
         &:before
-          content: "“"
+          content: ""
         &:after
-          content: "”"
+          content: ""
     img
       border-radius: 0.75rem
     hr
@@ -136,6 +136,104 @@ const className = Astro.props.class;
       margin-left: auto
       margin-right: auto
       max-width: 100%
+  
+  /* interactive code snippets start */
+  .cell-editor
+    font-family: 'JetBrains Mono Variable', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    font-weight: 400;
+    border: none;
+    height: auto;
+    color-scheme: dark;
+    font-size: 14px;
+    line-height: 1.45em;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    background: black;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    .snippet-output
+      font-size: 14px;
+      line-height: 1.45em;
+      border-style: none;
+      border-radius: 0px;
+      margin: 0px;
+      color: white;
+      background-color: black;
+      max-height: 300px;
+      padding: 10px 20px;
+      color-scheme: dark;
+      overflow: auto;
+    
+    .output-log
+      color: white;
+    .output-error
+      color: red;
+    .output-warn
+      color: yellow;
+
+    .run-bar
+      text-align: center;
+      transition: color 0.2s ease 0s, background-color 0.2s ease 0s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-family: 'JetBrains Mono Variable', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+      font-weight: 400;
+      font-size: 14px;
+      height: 2.5em;
+    
+    .run-bar-ready
+      background-color: #409EFF;
+      color: white;
+      cursor: pointer;
+    
+      &:hover
+        color: white;
+        background-color: #79BBFF;
+    .run-bar-running
+      background-color: #79BBFF;
+      color: white;
+    
+    .cell-header
+      text-align: center;
+      color: white;
+      cursor: pointer;
+      background-color: #409EFF;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-family: 'JetBrains Mono Variable', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+      font-weight: 400;
+      font-size: 14px;
+      height: 2.5em;
+      transition: color 0.2s ease 0s, background-color 0.2s ease 0s;
+      &:hover
+        color: white;
+        background-color: #79BBFF;
+
+    .cm-editor
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-left: 4px;
+      padding-right: 4px;
+    
+    script[type="text/notebook-cell"]
+      display: block;
+      white-space: pre;
+      background-color: rgb(40, 44, 52);
+      color: rgb(171, 178, 191);
+      padding: 10px;
+      font-family: 'JetBrains Mono Variable', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+      font-size: 14px;
+      line-height: 1.45em;
+      overflow-x: auto;
+      border-radius: 10px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+  /* interactive code snippets end */
 </style>
 
 <style lang="css" is:global>

@@ -25,7 +25,6 @@ fmt.Println("Hello, World!")
 - AE
 - Live2D
 - RSS
-- Stable Diffusion
 - 双拼, RIME
 - 日语
 - Logseq

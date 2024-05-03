@@ -4,7 +4,7 @@ published: 2024-04-28
 description: 'Hadoop 等环境配置'
 image: ''
 tags: [Big Data, Hadoop, HBase]
-category: 'Big Data'
+category: 'Examples'
 draft: false 
 ---
 

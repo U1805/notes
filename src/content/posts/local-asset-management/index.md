@@ -3,7 +3,7 @@ title: 简单的本地资源管理方案
 published: 2024-04-22
 description: '周五晚上的时候坐在客厅的小角落听最喜欢的乐队，窝在懒人沙发里，无聊了随手打开手边的设备，远程连接到资源库，成百上千的作品……'
 image: '../covers/11_1355420_87bc0aab3314eab.jpg'
-tags: ['local assets', 'media', 'animation', 'comic', 'voice']
+tags: ['Local assets', 'Media', 'Animation', 'Comic', 'Voice', 'Music']
 category: 'Management'
 draft: false 
 ---
@@ -56,6 +56,8 @@ draft: false
 ## 二、漫画
 
 漫画管理工具是用 [<span style="display: inline-grid;"><img style="margin: 0;" src="https://www.google.com/s2/favicons?domain=https://komga.org/img/favicon.ico&sz=16"/></span> Komga](https://github.com/gotson/komga) - Media server for comics/mangas/BDs/magazines/eBooks
+
+::github{repo="gotson/komga"}
 
 至于我本地的是什么漫画，可以直接看[元数据](#元数据)那里写的规范和样例文件名，懂的都懂（  
 不方便展示截图，这里的部署效果拿 @Moraxyc 的截图顶一下：
@@ -124,7 +126,7 @@ Komga 啥都好，唯一的问题就是不支持在线元数据刮削，只能�
 
 
 <details>
-  <summary>元数据脚本如下，设置路径后会递归搜索子目录下的 cbz 文件，嵌入 ComicInfo.xml 信息</summary>
+  <summary>元数据脚本，设置路径后会递归搜索子目录下的 cbz 文件，嵌入 ComicInfo.xml 信息</summary>
 
 ```python
 from pathlib import Path
@@ -244,13 +246,17 @@ directory = 'F:\漫画' # 根据需要更改
 scan_cbz_files(directory)
 ```
 
-> #TODO 后续可能会进一步联网获取 tags 信息
+:::note[TODO]
+后续可能会进一步联网获取 tags 信息
+:::
 
 </details>
 
 ## 三、音声
 
 [<span style="display: inline-grid;"><img style="margin: 0;" src="https://www.google.com/s2/favicons?domain=https://www.voicehub.top&sz=16"/></span> Kikoeru](https://github.com/vscodev/kikoeru) - Self-hosted web media player for DLsite works 
+
+::github{repo="vscodev/kikoeru"}
 
 Kikoeru 是一款使用Go开发的跨平台同人音声媒体整理和播放软件。
 
@@ -271,7 +277,7 @@ Kikoeru 是一款使用Go开发的跨平台同人音声媒体整理和播放软�
 - 更新元数据（因为从 DSLite 上获取，所以得开一下代理）
 
 ```shell
-kikoeru.exe sync -x socks5://127.0.0.1:8899
+kikoeru.exe sync -x socks5://127.0.0.1:7890
 ```
 
 元数据是根据自带 RJ 号从 DSLite 上获取的（有统一标识就是爽啊）
@@ -296,10 +302,14 @@ kikoeru.exe start
 
 播放器：[MusicPlayer2](https://github.com/zhongyang219/MusicPlayer2) - 集音乐播放、歌词显示、格式转换等众多功能于一身的音频播放软件
 
+::github{repo="zhongyang219/MusicPlayer2"}
+
 音乐直接上电报搜索下载  <span style="display: inline-grid; margin: -32px 0 -32px 10px">![heia](../meme/heia.jpg)</span>
 
+:::tip
 win11 上主界面标题上面会有一条白边，可以在兼容性设置 Win8 临时隐藏起来  
 （[主界面顶部白条可以隐藏吗 · Issue #518 · zhongyang219/MusicPlayer2](https://github.com/zhongyang219/MusicPlayer2/issues/518)）
+:::
 
 软件支持一定程度的自定义界面：[用户自定义界面](https://github.com/zhongyang219/MusicPlayer2/wiki/用户自定义界面)
 

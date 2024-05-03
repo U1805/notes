@@ -8,8 +8,15 @@ import rehypeKatex from "rehype-katex"
 import rehypeSlug from "rehype-slug"
 import remarkMath from "remark-math"
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs"
+import { GithubCardComponent } from "./src/plugins/rehype-component-github-card.mjs"
+import { AdmonitionComponent } from "./src/plugins/rehype-component-admonition.mjs"
+import remarkDirective from "remark-directive" /* Handle directives */
+import remarkDirectiveRehype from 'remark-directive-rehype' /* Pass directives to rehype */
+import rehypeComponents from "rehype-components"; /* Render the custom directive content */
 import svelte from "@astrojs/svelte"
 import swup from '@swup/astro';
+import sitemap from '@astrojs/sitemap';
+import {parseDirectiveNode} from "./src/plugins/remark-directive-rehype.js";
 
 const oklchToHex = (str) => {
   const DEFAULT_HUE = 250
@@ -23,8 +30,9 @@ const oklchToHex = (str) => {
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://u1805.github.io",
-  base: "",
+  site: "https://u1805.github.io/",
+  base: "/",
+  trailingSlash: "always",
   integrations: [
     tailwind(),
     swup({
@@ -49,12 +57,23 @@ export default defineConfig({
       Image: false,
     }),
     svelte(),
+    sitemap(),
   ],
   markdown: {
-    remarkPlugins: [remarkMath, remarkReadingTime],
+    remarkPlugins: [remarkMath, remarkReadingTime, remarkDirective, parseDirectiveNode],
     rehypePlugins: [
       rehypeKatex,
       rehypeSlug,
+      [rehypeComponents, {
+        components: {
+          github: GithubCardComponent,
+          note: (x, y) => AdmonitionComponent(x, y, "note"),
+          tip: (x, y) => AdmonitionComponent(x, y, "tip"),
+          important: (x, y) => AdmonitionComponent(x, y, "important"),
+          caution: (x, y) => AdmonitionComponent(x, y, "caution"),
+          warning: (x, y) => AdmonitionComponent(x, y, "warning"),
+        },
+      }],
       [
         rehypeAutolinkHeadings,
         {
@@ -81,6 +100,17 @@ export default defineConfig({
     ],
   },
   vite: {
+    build: {
+      rollupOptions: {
+        onwarn(warning, warn) {
+          // temporarily suppress this warning
+          if (warning.message.includes("is dynamically imported by") && warning.message.includes("but also statically imported by")) {
+            return;
+          }
+          warn(warning);
+        }
+      }
+    },
     css: {
       preprocessorOptions: {
         stylus: {

@@ -4,7 +4,7 @@ published: 2024-03-06 23:40:00
 draft: false
 tags: [Python, Crawler]
 category: Crawler
-image: "./covers/13.jpg"
+image: "./covers/4bef35a8f0efc3b2edfeca0ac45a1feb90bd5b27.jpg"
 ---
 
 # python 爬虫

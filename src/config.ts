@@ -35,13 +35,14 @@ export const navBarConfig: NavBarConfig = {
     {
       name: 'GitHub',
       url: 'https://github.com/u1805',
-      external: false,
+      external: true,
     },
   ],
 }
 
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/avatar.jpg',
+  badge: 'assets/images/not-by-ai/Written-By-Human-Not-By-AI-Badge-white.svg',
   name: 'Dai0v0',
   bio: '一瞬一瞬で一生',
   links: [

@@ -150,3 +150,14 @@ watch([() => demo.name, nums], ([newName, newNums], [oldName, oldNums]) => {
 	console.log('watch 已触发: nums', newNums)
 })
 ```
+
+
+
+# 添加一个包含 `declare module ‘xxxxx‘；` 的新声明(.d.ts)文件
+
+main.ts 同级下建立 `declare.d.ts` 
+
+```
+decalre module 'xxxxx'
+```
+

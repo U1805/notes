@@ -25,7 +25,7 @@ fmt.Println("Hello, World!")
 - AE
 - Live2D
 - RSS
-- 双拼, RIME
+- 双拼, RIME → 看我的 [输入方案](https://github.com/U1805/rime)
 - 日语
 - Logseq
 - VS Code

@@ -2,7 +2,7 @@
 title: 我的RSS使用手册
 published: 2022-09-25 2:30:13
 tags: [RSS]
-category: RSS
+category: Life
 draft: false
 ---
 

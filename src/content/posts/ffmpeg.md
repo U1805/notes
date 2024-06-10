@@ -3,7 +3,7 @@ title: FFmpeg 代码片段
 published: 2024-03-06 23:42:00
 draft: false
 tags: [FFmpeg, Video]
-category: Cli-tools
+category: Tools
 image: "./covers/FijuOKZaMAE451l.png"
 ---
 

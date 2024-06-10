@@ -3,7 +3,7 @@ title: GIT 常用命令
 published: 2023-07-12 13:05:56
 draft: false
 tags: [Git]
-category: Cli-tools
+category: Tools
 image: "./covers/branch.jpg"
 ---
 

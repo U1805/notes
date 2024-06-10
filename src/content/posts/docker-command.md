@@ -3,7 +3,7 @@ title: Docker 常用命令
 published: 2023-07-13 13:06:21
 draft: false
 tags: [Docker]
-category: Cli-tools
+category: Tools
 ---
 
 学习过程应该先是怎么用，然后是为什么这么用，所以 Docker 原理之后再写（

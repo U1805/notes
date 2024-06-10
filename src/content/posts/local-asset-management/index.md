@@ -4,7 +4,7 @@ published: 2024-04-22
 description: '周五晚上的时候坐在客厅的小角落听最喜欢的乐队，窝在懒人沙发里，无聊了随手打开手边的设备，远程连接到资源库，成百上千的作品……'
 image: '../covers/11_1355420_87bc0aab3314eab.jpg'
 tags: ['Local assets', 'Media', 'Animation', 'Comic', 'Voice', 'Music']
-category: 'Management'
+category: 'Life'
 draft: false 
 ---
 

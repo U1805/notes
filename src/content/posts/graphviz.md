@@ -3,7 +3,7 @@ title: Graphviz 的基本使用
 published: 2023-10-19 23:49:22
 draft: false
 tags: [graphviz, python]
-category: Examples
+category: Tools
 ---
 
 

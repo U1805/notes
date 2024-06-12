@@ -921,7 +921,7 @@ print "Good bye!"
 
 下面是一块突出显示的文本
 
-```txt
+```
 这是一段
 突出显示的
 文本内容
@@ -996,7 +996,7 @@ while(i < 100):
 print "Good bye!"
 ```
 
-```txt
+```
 这是一段
 突出显示的
 文本内容
@@ -1015,7 +1015,7 @@ print "Good bye!"
 
 ##### 示范
 `````md
-````txt
+````plaintext
 ```js
 // 3. 输出 100以内(不包括100) 所有偶数的和
 // 这类求和问题的核心 ： 利用循环  (总和 = 旧数的和 + 新数)
@@ -1896,7 +1896,7 @@ $$
 
 **<big>源码1：</big>**
 
-````txt
+````plaintext
 ```mermaid
 graph TB
 	%% s=start  e=end  f=fork  n=normal
@@ -1934,7 +1934,7 @@ graph TB
 
 **<big>源码2：</big>**
 
-````txt
+````plaintext
 ```mermaid
 graph LR
 	%% s=start  e=end  f= fork n=normal
@@ -2016,7 +2016,7 @@ pie
 
 **<big>源码：</big>**
 
-````txt
+````plaintext
 ```mermaid
 sequenceDiagram
 	%% 自动编号
@@ -2174,7 +2174,7 @@ sequenceDiagram
 
 **<big>源码：</big>**
 
-````txt
+````plaintext
 ```mermaid
 gantt
     title A Gantt Diagram

@@ -157,7 +157,7 @@ watch([() => demo.name, nums], ([newName, newNums], [oldName, oldNums]) => {
 
 main.ts 同级下建立 `declare.d.ts` 
 
-```
+```typescript
 decalre module 'xxxxx'
 ```
 
